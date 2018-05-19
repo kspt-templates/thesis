@@ -1,0 +1,8 @@
+compile_pdf:
+    image: aergus/latex
+    script:
+        - make pdf
+    artifacts:
+        paths:
+            - master_thesis.pdf
+
