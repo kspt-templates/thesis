@@ -480,6 +480,7 @@
 \captionsetup{singlelinecheck=false}
 \captionsetup[figure]{%
   labelsep=period,
+  name={\CYRR\cyri\cyrs.},
   justification=centering}
 % \captionsetup[table]{%
 %   labelsep=period,
@@ -489,7 +490,8 @@
     labelsep=newline,
     justification=centering,
     skip=-10pt}
-\floatname{figure}{\CYRR\cyri\cyrs\cyru\cyrn\cyro\cyrk}
+% \floatname{figure}{\CYRR\cyri\cyrs\cyru\cyrn\cyro\cyrk}
+\floatname{figure}{\CYRR\cyri\cyrs}
 \floatname{table}{\CYRT\cyra\cyrb\cyrl\cyri\cyrc\cyra}
 
 % Workaround for disser-1.2.0 `headcenter` pagestyle options
