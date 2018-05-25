@@ -492,6 +492,7 @@
 
 \providecommand\chapteralign{\centering}
 \providecommand\chapterfont{\Large\bfseries}
+\providecommand\beforechapternum{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~}
 \providecommand\beforechapter{}
 \providecommand\afterchapter{\par\nobreak\vskip 20\p@}
 \newlength{\chapterindent}
@@ -515,10 +516,10 @@
   \ifnum \c@secnumdepth >\m@ne
     \refstepcounter{chapter}%
 %    {\addcontentsline{toc}{chapter}{\@tocseccntformat{chapter} #1}}%
-    {\addcontentsline{toc}{chapter}{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~\@tocseccntformat{chapter}#1}}%
+    {\addcontentsline{toc}{chapter}{\beforechapternum\@tocseccntformat{chapter}#1}}%
   \else
-    {\addcontentsline{toc}{chapter}{#1}}%
-    {\addcontentsline{toc}{chapter}{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~#1}}%
+    % {\addcontentsline{toc}{chapter}{#1}}%
+    {\addcontentsline{toc}{chapter}{\beforechapternum#1}}%
   \fi
   \chaptermark{#1}%
   \addtocontents{lof}{\protect\addvspace{10\p@}}%
@@ -535,7 +536,7 @@
   \parindent\z@
   \normalfont\hskip\chapterindent%
   \ifnum \c@secnumdepth >\m@ne
-    {\chapterfont\thechapteralign{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~}\@seccntformat{chapter}}
+    {\chapterfont\thechapteralign\beforechapternum\@seccntformat{chapter}}
   \fi
   \interlinepenalty\@M
   \chapterfont\chapteralign\beforechapter #1\afterchapter
@@ -633,11 +634,12 @@
 
   \renewcommand\chapteralign{\appendixalign}
   \renewcommand\chapterfont{\appendixfont}
+  \renewcommand\beforechapternum{}
   \renewcommand\beforechapter{\beforeappendix}
   \renewcommand\afterchapter{\afterappendix}
   \renewcommand\chapterindent{\appendixindent}
 
-  \gdef\thechapter{\theappendix}
+  %\gdef\thechapter{\theappendix}
 }
 
 \newcommand\noappendix{
