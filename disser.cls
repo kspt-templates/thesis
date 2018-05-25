@@ -514,9 +514,11 @@
 \def\@chapter[#1]#2{
   \ifnum \c@secnumdepth >\m@ne
     \refstepcounter{chapter}%
-    {\addcontentsline{toc}{chapter}{\@tocseccntformat{chapter} #1}}%
+%    {\addcontentsline{toc}{chapter}{\@tocseccntformat{chapter} #1}}%
+    {\addcontentsline{toc}{chapter}{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~\@tocseccntformat{chapter}#1}}%
   \else
     {\addcontentsline{toc}{chapter}{#1}}%
+    {\addcontentsline{toc}{chapter}{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~#1}}%
   \fi
   \chaptermark{#1}%
   \addtocontents{lof}{\protect\addvspace{10\p@}}%
@@ -533,7 +535,7 @@
   \parindent\z@
   \normalfont\hskip\chapterindent%
   \ifnum \c@secnumdepth >\m@ne
-    {\thechapterfont\thechapteralign\@seccntformat{chapter}}
+    {\chapterfont\thechapteralign{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~}\@seccntformat{chapter}}
   \fi
   \interlinepenalty\@M
   \chapterfont\chapteralign\beforechapter #1\afterchapter
@@ -670,8 +672,10 @@
 \providecommand\tocsectionfont{\normalfont}
 \providecommand\tocsectionfillfont{}
 \providecommand\tocsectionnumfont{}
-\providecommand\tocsectionindent{1.5em}
-\providecommand\tocsectionnameindent{2.6em}
+% \providecommand\tocsectionindent{1.5em}
+\providecommand\tocsectionindent{0em}
+% \providecommand\tocsectionnameindent{2.6em}
+\providecommand\tocsectionnameindent{2.0em}
 
 \providecommand\sectionfont{\normalfont\large\bfseries}
 
@@ -691,8 +695,10 @@
 \providecommand\tocsubsectionfillfont{}
 \providecommand\tocsubsectionnumfont{}
 
-\providecommand\tocsubsectionindent{4.1em}
-\providecommand\tocsubsectionnameindent{3.5em}
+% \providecommand\tocsubsectionindent{4.1em}
+% \providecommand\tocsubsectionnameindent{3.5em}
+\providecommand\tocsubsectionindent{0.0em}
+\providecommand\tocsubsectionnameindent{2.5em}
 
 \providecommand\subsectionfont{\normalfont\normalsize\bfseries}
 
@@ -712,8 +718,10 @@
 \providecommand\tocsubsubsectionfillfont{}
 \providecommand\tocsubsubsectionnumfont{}
 
-\providecommand\tocsubsubsectionindent{7.6em}
-\providecommand\tocsubsubsectionnameindent{4.7em}
+% \providecommand\tocsubsubsectionindent{7.6em}
+% \providecommand\tocsubsubsectionnameindent{4.7em}
+\providecommand\tocsubsubsectionindent{0.0em}
+\providecommand\tocsubsubsectionnameindent{3.0em}
 
 \providecommand\subsubsectionfont{\normalfont\normalsize\bfseries}
 
