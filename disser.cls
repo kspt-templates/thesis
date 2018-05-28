@@ -501,11 +501,11 @@
 \newcommand*\chaptermark[1]{}
 
 \newcommand\chapter{%
-  \if@openright
-    \cleardoublepage
-  \else
+  %\if@openright
+  %  \cleardoublepage
+  %\else
     \clearpage
-  \fi
+  %\fi
   \thispagestyle{\@chapterpagestyle}%
   \global\@topnum\z@
   \@afterindentfalse
@@ -1536,11 +1536,11 @@
 }
 
 \newcommand\nchapter[1]{%
-  \if@openright
-    \cleardoublepage
-  \else
+  %\if@openright
+  %  \cleardoublepage
+  %\else
     \clearpage
-  \fi
+  %\fi
   \thispagestyle{\@chapterpagestyle}%
   \global\@topnum\z@
   \hrefphantom{chapter}
