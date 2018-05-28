@@ -492,7 +492,7 @@
 
 \providecommand\chapteralign{\centering}
 \providecommand\chapterfont{\Large\bfseries}
-\providecommand\beforechapternum{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~}
+\providecommand\beforechapternum{}
 \providecommand\beforechapter{}
 \providecommand\afterchapter{\par\nobreak\vskip 20\p@}
 \newlength{\chapterindent}
