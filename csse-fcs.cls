@@ -165,28 +165,27 @@
   \CYRR\CYRE\CYRF\CYRE\CYRR\CYRA\CYRT
 }
 \newcommand\csseabstractnameen{%
-  ABSTRACT%
+  THE ABSTRACT%
 }
 \newcommand\stats@report{%
-  \CYRO\cyrt\cyrch\cyre\cyrt%
+  \CYRN\cyra%
 }
 \newcommand\stats@report@en{%
-  Report%
 }
 \newcommand\stats@page{%
-  \cyrs\cyrt\cyrr.%
+  \cyrs.%
 }
 \newcommand\stats@page@en{%
   pages%
 }
 \newcommand\stats@fig{%
-  \cyrr\cyri\cyrs.%
+  \cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyro\cyrv%
 }
 \newcommand\stats@fig@en{%
-  figures%
+  pictures%
 }
 \newcommand\stats@table{%
-  \cyrt\cyra\cyrb\cyrl.%
+  \cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251%
 }
 \newcommand\stats@table@en{%
   tables%
@@ -198,15 +197,15 @@
   references%
 }
 \newcommand\stats@appendix{%
-  \cyrp\cyrr\cyri\cyrl.%
+  \cyrp\cyrr\cyri\cyrl\cyro\cyrzh\cyre\cyrn\cyri\cyrishrt%
 }
 \newcommand\stats@appendix@en{%
   appendicies%
 }
-\newcommand\@stats[5]{%
+\newcommand\@stats[4]{%
   \stats@report%
   \IfEq{#1}{0}{}{%
-  , #1~\stats@page%
+  ~#1~\stats@page%
   }%
   \IfEq{#2}{0}{}{%
   , #2~\stats@fig%
@@ -214,17 +213,17 @@
   \IfEq{#3}{0}{}{%
   , #3~\stats@table%
   }%
+%  \IfEq{#4}{0}{}{%
+%  , #4~\stats@cite%
+%  }%
   \IfEq{#4}{0}{}{%
-  , #4~\stats@cite%
-  }%
-  \IfEq{#5}{0}{}{%
-  , #5~\stats@appendix%
+  , #4~\stats@appendix%
   }%
 }
-\newcommand\@stats@en[5]{%
+\newcommand\@stats@en[4]{%
   \stats@report@en%
   \IfEq{#1}{0}{}{%
-  , #1~\stats@page@en%
+  #1~\stats@page@en%
   }%
   \IfEq{#2}{0}{}{%
   , #2~\stats@fig@en%
@@ -232,11 +231,11 @@
   \IfEq{#3}{0}{}{%
   , #3~\stats@table@en%
   }%
+%  \IfEq{#4}{0}{}{%
+%  , #4~\stats@cite@en%
+%  }%
   \IfEq{#4}{0}{}{%
-  , #4~\stats@cite@en%
-  }%
-  \IfEq{#5}{0}{}{%
-  , #5~\stats@appendix@en%
+  , #4~\stats@appendix@en%
   }%
 }
 
@@ -268,19 +267,19 @@
 }\keywordsen{}
 
 \newcommand\@makeabstract[4]{%
-  \clearpage%
-  \thispagestyle{empty}%
+  %\clearpage%
+  %\thispagestyle{empty}%
   %
   \@makeschapterhead{#1}%
   \@afterheading%
   %
-  \begin{center}%
-  #2%
-  \end{center}%
+  \begin{flushleft}%
+  ~~~~~ #2%
+  \end{flushleft}%
   %
-  \begin{center}%
+  \begin{flushleft}%
     \MakeUppercase{#3}%
-  \end{center}
+  \end{flushleft}
   %
   {%
     \hskip\parindent%
@@ -295,7 +294,6 @@
       \@pagecount}{%
       \@figcount}{%
       \@tablecount}{%
-      \@citecount}{%
       \@appendixcount%
     }}{%
     \@keywords}{%
@@ -309,7 +307,6 @@
       \@pagecount}{%
       \@figcount}{%
       \@tablecount}{%
-      \@citecount}{%
       \@appendixcount%
     }}{%
     \@keywords@en}{%
@@ -318,6 +315,7 @@
 }
 \newcommand\makeabstract{%
   \makeabstractru%
+
   \makeabstracten%
 }
 
@@ -479,12 +477,14 @@
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
 \captionsetup{singlelinecheck=false}
 \captionsetup[figure]{%
+    font=normal,
   labelsep=period,
   justification=centering}
 % \captionsetup[table]{%
 %   labelsep=period,
 %   justification=raggedleft}
 \captionsetup[table]{ 
+    font=normal,
     format=hfillstart,
     labelsep=newline,
     justification=centering,

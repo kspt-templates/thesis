@@ -14,6 +14,9 @@
 
 \ProvidesFile{titledefs.rtx}
 
+\def\minobrname{
+  \cyr\CYRM\cyri\cyrn\cyri\cyrs\cyrt\cyre\cyrr\cyrs\cyrt\cyrv\cyro\ \cyro\cyrb\cyrr\cyra\cyrz\cyro\cyrv\cyra\cyrn\cyri\cyrya\ \cyri\ \cyrn\cyra\cyru\cyrk\cyri\ \CYRR\cyro\cyrs\cyrs\cyri\cyrishrt\cyrs\cyrk\cyro\cyrishrt\ \CYRF\cyre\cyrd\cyre\cyrr\cyra\cyrc\cyri\cyri
+}
 \def\abstractname{\cyr\CYRA\cyrn\cyrn\cyro\cyrt\cyra\cyrc\cyri\cyrya}
 \def\titlepagename{%
 \cyr\CYRT\cyri\cyrt\cyru\cyrl\cyrsftsn\cyrn\cyrery\cyrishrt\ %
@@ -26,17 +29,16 @@
 \cyrk\ \cyrz\cyra\cyrshch\cyri\cyrt\cyre}
 \def\appos{\cyr\cyrz\cyra\cyrv.\ \cyrk\cyra\cyrf\cyre\cyrd\cyrr\cyro\cyrishrt}
 \def\groupname{\cyr\cyrg\cyrr.}
-\def\topicname{\cyr\CYRT\cyre\cyrm\cyra}
-\def\topiclabel{\topicname:\ }
-\def\coursename{\cyr\CYRN\cyra\cyrp\cyrr\cyra\cyrv\cyrl\cyre\cyrn\cyri\cyre}
-\def\courselabel{\coursename:}
+\def\topicname{}
+\def\topiclabel{}
+\def\coursename{\cyr\cyrp\cyro\ \cyrn\cyra\cyrp\cyrr\cyra\cyrv\cyrl\cyre\cyrn\cyri\cyryu}
+\def\courselabel{\coursename}
 \def\specname{%
-\cyr\CYRS\cyrp\cyre\cyrc\cyri\cyra\cyrl\cyrsftsn\cyrn\cyro\cyrs\cyrt\cyrsftsn}
-\def\speclabel{\specname:}
+\cyr\cyrp\cyro\ \cyro\cyrb\cyrr\cyra\cyrz\cyro\cyrv\cyra\cyrt\cyre\cyrl\cyr\char252\cyrn\cyro\cyrishrt\ \cyrp\cyrr\cyro\cyrg\cyrr\cyra\cyrm\cyrm\cyre}
+\def\speclabel{\specname}
 \def\masterprogname{%
-\cyr\CYRM\cyra\cyrg\cyri\cyrs\cyrt\cyre\cyrr\cyrs\cyrk\cyra\cyrya\ %
-\cyrp\cyrr\cyro\cyrg\cyrr\cyra\cyrm\cyrm\cyra}
-\def\masterproglabel{\masterprogname:}
+\cyr\cyrp\cyro\ \cyro\cyrb\cyrr\cyra\cyrz\cyro\cyrv\cyra\cyrt\cyre\cyrl\cyr\char252\cyrn\cyro\cyrishrt\ \cyrp\cyrr\cyro\cyrg\cyrr\cyra\cyrm\cyrm\cyre}
+\def\masterproglabel{\masterprogname}
 \def\studentname{\cyr\CYRV\cyrery\cyrp\cyro\cyrl\cyrn\cyri\cyrl\ %
 \cyrs\cyrt\cyru\cyrd\cyre\cyrn\cyrt}
 \def\studentlabel{\studentname\ \groupname\ \@group\hspace{1.5cm}}

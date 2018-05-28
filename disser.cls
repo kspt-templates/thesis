@@ -492,7 +492,7 @@
 
 \providecommand\chapteralign{\centering}
 \providecommand\chapterfont{\Large\bfseries}
-\providecommand\beforechapternum{\CYRR\CYRA\CYRZ\CYRD\CYRE\CYRL~}
+\providecommand\beforechapternum{}
 \providecommand\beforechapter{}
 \providecommand\afterchapter{\par\nobreak\vskip 20\p@}
 \newlength{\chapterindent}
@@ -501,11 +501,11 @@
 \newcommand*\chaptermark[1]{}
 
 \newcommand\chapter{%
-  \if@openright
-    \cleardoublepage
-  \else
+  %\if@openright
+  %  \cleardoublepage
+  %\else
     \clearpage
-  \fi
+  %\fi
   \thispagestyle{\@chapterpagestyle}%
   \global\@topnum\z@
   \@afterindentfalse
@@ -940,7 +940,7 @@
 \disser@deflength\abovecaptionskip{10\p@}
 \disser@deflength\belowcaptionskip{0\p@}
 \newcommand\captionlabeldelim{.}
-\newcommand\captionfont{\small}
+\newcommand\captionfont{\normal}
 \newcommand\captionlabelfont{\small\selectfont}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
@@ -959,7 +959,7 @@
 \def\fps@figure{tbp}
 \def\ftype@figure{1}
 \def\ext@figure{lof}
-\def\fnum@figure{\figurename~\thefigure}
+\def\fnum@figure{\figurename\thefigure}
 
 \renewcommand\thetable{\ifnum \c@chapter>\z@\thechapter.\fi\@arabic\c@table}
 
@@ -1018,7 +1018,7 @@
 
 \if@titlepage
   \newenvironment{abstract}{
-    \thispagestyle{empty}
+    %\thispagestyle{empty}
     \@beginparpenalty\@lowpenalty
     \begin{center}%
       \abstractnamefont\abstractname
@@ -1536,11 +1536,11 @@
 }
 
 \newcommand\nchapter[1]{%
-  \if@openright
-    \cleardoublepage
-  \else
+  %\if@openright
+  %  \cleardoublepage
+  %\else
     \clearpage
-  \fi
+  %\fi
   \thispagestyle{\@chapterpagestyle}%
   \global\@topnum\z@
   \hrefphantom{chapter}

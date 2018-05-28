@@ -38,7 +38,7 @@
 \ifundeflength\secondskip{8ex}
 \ifundeflength\thirdskip{2ex}
 \ifundeflength\fourthskip{0ex}
-\ifundeflength\fifthskip{16ex}
+\ifundeflength\fifthskip{5ex}
 \ifundeflength\sixthskip{1ex}
 
 \def\titlefont{\Large\bfseries}
@@ -48,6 +48,7 @@
 \thispagestyle{empty}
 \enlargethispage{2cm}
 \begin{center}
+  \instfont\minobrname\par
   \instfont\@institution\par
   \instfont\@faculty\par
   \instfont\@department\par
@@ -64,18 +65,22 @@
 \end{center}
 \vskip\fourthskip
 %
-\begin{flushleft}
-  \courselabel\ \@coursenum\ --\ \@course\\%
-  \masterproglabel\ \@masterprognum\ --\ \@masterprog%
-\end{flushleft}
+\begin{center}
+  \small
+  \courselabel\ \@coursenum\ <<\@course>>\\%
+  \masterproglabel\\
+  \ \@masterprognum\ <<\@masterprog>>%
+\end{center}
 %
-\vskip\fifthskip
+\vskip5ex
 \begin{tabbing}
   \studentlabel\=\makebox[\fieldhshift][l]{\hrulefill\ \@author}\\[\sixthskip]
   \ifx\@sa\empty\else\diplomafield{sa}\\[\sixthskip]\fi
   \ifx\@sasnd\empty\else\diplomafield{sasnd}\\[\sixthskip]\fi
   \ifx\@rev\empty\else\diplomafield{rev}\\[\sixthskip]\fi
   \ifx\@revsnd\empty\else\diplomafield{revsnd}\\[\sixthskip]\fi
+  \ifx\@scon\empty\else\diplomafield{scon}\\[9pt]\fi
+  \ifx\@sconsnd\empty\else\diplomafield{sconsnd}\fi
   \ifx\@con\empty\else\diplomafield{con}\\[9pt]\fi
   \ifx\@consnd\empty\else\diplomafield{consnd}\fi
 \end{tabbing}
@@ -133,6 +138,7 @@
 \thispagestyle{empty}
 \enlargethispage{2cm}
 \begin{center}
+  \instfont\minobrname\par
   \instfont\@institution\par
   \instfont\@faculty\par
   \instfont\@department\par
@@ -152,7 +158,8 @@
 \begin{center}
   % Aligning student name as on the title page
   \vphantom{\courselabel\ \@coursenum\ --\ \@course}\ \\%
-  \vphantom{\masterproglabel\ \@masterprognum\ --\ \@masterprog}%
+  \vphantom{\masterproglabel\
+  \@masterprognum\ --\ \@masterprog}%
 \end{center}
 %
 \vskip\fifthskip
