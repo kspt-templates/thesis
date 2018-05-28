@@ -560,9 +560,9 @@
 
 \newcommand*\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
-    \addpenalty{-\@highpenalty}
-    \vskip 1.0em \@plus\p@
-    \setlength\@tempdima{1.5em}
+    %\addpenalty{-\@highpenalty}
+    \vskip .3em \@plus\p@
+    \setlength\@tempdima{2.5em}
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
@@ -675,7 +675,7 @@
 \providecommand\tocsectionfillfont{}
 \providecommand\tocsectionnumfont{}
 % \providecommand\tocsectionindent{1.5em}
-\providecommand\tocsectionindent{0em}
+\providecommand\tocsectionindent{0.0em}
 % \providecommand\tocsectionnameindent{2.6em}
 \providecommand\tocsectionnameindent{2.0em}
 
