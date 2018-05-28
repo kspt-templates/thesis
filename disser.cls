@@ -959,7 +959,7 @@
 \def\fps@figure{tbp}
 \def\ftype@figure{1}
 \def\ext@figure{lof}
-\def\fnum@figure{\figurename~\thefigure}
+\def\fnum@figure{\figurename\thefigure}
 
 \renewcommand\thetable{\ifnum \c@chapter>\z@\thechapter.\fi\@arabic\c@table}
 
