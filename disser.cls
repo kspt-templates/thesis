@@ -1018,7 +1018,7 @@
 
 \if@titlepage
   \newenvironment{abstract}{
-    \thispagestyle{empty}
+    %\thispagestyle{empty}
     \@beginparpenalty\@lowpenalty
     \begin{center}%
       \abstractnamefont\abstractname

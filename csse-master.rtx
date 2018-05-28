@@ -64,10 +64,11 @@
 \end{center}
 \vskip\fourthskip
 %
-\begin{flushleft}
+\begin{center}
   \courselabel\ \@coursenum\ --\ \@course\\%
-  \masterproglabel\ \@masterprognum\ --\ \@masterprog%
-\end{flushleft}
+  \masterproglabel\\
+  \ \@masterprognum\ --\ \@masterprog%
+\end{center}
 %
 \vskip\fifthskip
 \begin{tabbing}
