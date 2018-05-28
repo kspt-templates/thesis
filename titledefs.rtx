@@ -14,6 +14,9 @@
 
 \ProvidesFile{titledefs.rtx}
 
+\def\minobrname{
+  \cyr\CYRM\cyri\cyrn\cyri\cyrs\cyrt\cyre\cyrr\cyrs\cyrt\cyrv\cyro\ \cyro\cyrb\cyrr\cyra\cyrz\cyro\cyrv\cyra\cyrn\cyri\cyrya\ \cyri\ \cyrn\cyra\cyru\cyrk\cyri\ \CYRR\cyro\cyrs\cyrs\cyri\cyrishrt\cyrs\cyrk\cyro\cyrishrt\ \CYRF\cyre\cyrd\cyre\cyrr\cyra\cyrc\cyri\cyri
+}
 \def\abstractname{\cyr\CYRA\cyrn\cyrn\cyro\cyrt\cyra\cyrc\cyri\cyrya}
 \def\titlepagename{%
 \cyr\CYRT\cyri\cyrt\cyru\cyrl\cyrsftsn\cyrn\cyrery\cyrishrt\ %
