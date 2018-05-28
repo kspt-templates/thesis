@@ -66,9 +66,10 @@
 \vskip\fourthskip
 %
 \begin{center}
-  \courselabel\ \@coursenum\ --\ \@course\\%
+  \small
+  \courselabel\ \@coursenum\ <<\@course>>\\%
   \masterproglabel\\
-  \ \@masterprognum\ --\ \@masterprog%
+  \ \@masterprognum\ <<\@masterprog>>%
 \end{center}
 %
 \vskip5ex
@@ -157,7 +158,8 @@
 \begin{center}
   % Aligning student name as on the title page
   \vphantom{\courselabel\ \@coursenum\ --\ \@course}\ \\%
-  \vphantom{\masterproglabel\ \@masterprognum\ --\ \@masterprog}%
+  \vphantom{\masterproglabel\
+  \@masterprognum\ --\ \@masterprog}%
 \end{center}
 %
 \vskip\fifthskip
