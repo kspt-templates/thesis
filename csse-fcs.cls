@@ -477,12 +477,14 @@
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
 \captionsetup{singlelinecheck=false}
 \captionsetup[figure]{%
+    font=normal,
   labelsep=period,
   justification=centering}
 % \captionsetup[table]{%
 %   labelsep=period,
 %   justification=raggedleft}
 \captionsetup[table]{ 
+    font=normal,
     format=hfillstart,
     labelsep=newline,
     justification=centering,

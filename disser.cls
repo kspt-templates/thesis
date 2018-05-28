@@ -940,7 +940,7 @@
 \disser@deflength\abovecaptionskip{10\p@}
 \disser@deflength\belowcaptionskip{0\p@}
 \newcommand\captionlabeldelim{.}
-\newcommand\captionfont{\small}
+\newcommand\captionfont{\normal}
 \newcommand\captionlabelfont{\small\selectfont}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
