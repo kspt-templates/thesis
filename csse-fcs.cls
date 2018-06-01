@@ -113,10 +113,10 @@
     paper=a5paper,
     %nohead=true,
     includefoot=true,
-    left=30mm,
-    right=10mm,
-    top=20mm,
-    bottom=20mm,
+    left=18mm,
+    right=18mm,
+    top=18mm,
+    bottom=18mm,
     footskip=10mm
   }
   \setlength{\fieldhshift}{5cm}
