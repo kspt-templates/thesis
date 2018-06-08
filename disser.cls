@@ -679,7 +679,7 @@
 % \providecommand\tocsectionnameindent{2.6em}
 \providecommand\tocsectionnameindent{2.0em}
 
-\providecommand\sectionfont{\normalfont\large\bfseries}
+\providecommand\sectionfont{\normalfont\normalsize\bfseries}
 
 \providecommand\prethesection{}
 \providecommand\postthesection{.~}
