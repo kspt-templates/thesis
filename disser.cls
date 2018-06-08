@@ -486,12 +486,12 @@
 \providecommand\tocchapternumfont{\normalfont}
 
 \providecommand\thechapteralign{\centering}
-\providecommand\thechapterfont{\Large}
+\providecommand\thechapterfont{\normalsize}
 \providecommand\prethechapter{\protect\chaptername~}
 \providecommand\postthechapter{\par\nobreak\vskip 5\p@}
 
 \providecommand\chapteralign{\centering}
-\providecommand\chapterfont{\Large\bfseries}
+\providecommand\chapterfont{\normalsize\bfseries}
 \providecommand\beforechapternum{}
 \providecommand\beforechapter{}
 \providecommand\afterchapter{\par\nobreak\vskip 20\p@}
