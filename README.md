@@ -59,13 +59,11 @@ make clean
 Если имеющихся файлов недостаточно, то добавить новые можно, создав их и подключив после предыдущих в файле `thesis.tex`
 1. Написать заключение в файле `conclusion.tex`
 1. Отредактировать согласование в реферате (файл `csse-fcs.cls`):
-
-	2. на 182 строке
-
+	1. на 182 строке
 		* рисунков - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyro\cyrv`
 		* рисунка - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyra`
 		* рисунок - `\cyrr\cyri\cyrs\cyru\cyrn\cyro\cyrk`
-	2. на 188 строке 
+	1. на 188 строке 
 		* таблица - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyra`
 		* таблицы - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251`
 		* таблиц - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc`
