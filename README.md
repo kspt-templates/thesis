@@ -60,9 +60,9 @@ make clean
 1. Написать заключение в файле `conclusion.tex`
 1. Отредактировать согласование в реферате (файл `csse-fcs.cls`):
 	1. на 182 строке
-		* рисунков - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyro\cyrv`
-		* рисунка - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyra`
 		* рисунок - `\cyrr\cyri\cyrs\cyru\cyrn\cyro\cyrk`
+		* рисунка - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyra`
+		* рисунков - `\cyrr\cyri\cyrs\cyru\cyrn\cyrk\cyro\cyrv`
 	1. на 188 строке 
 		* таблица - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyra`
 		* таблицы - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251`
