@@ -129,7 +129,12 @@
 \settoheight{\picsize}{ \vbox{\@approved} }
 \setlength{\picsize}{\picsize - 4ex}
 
-\def\drawlogo{\hfill\includegraphics[height=\picsize]{\@logo}}
+\def\drawlogo{
+\hfill
+\begin{center}
+\includegraphics[height=\picsize]{\@logo}
+\end{center}
+}
 
 \def\titlefont{\Large\bfseries}
 \def\topiclabelfont{\large}
